@@ -17,26 +17,26 @@
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="phongban">Danh sách phòng ban</a>
+                                            <a class="nav-link" href="{{url('phongban')}}">Danh sách phòng ban</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="chucvu">Danh sách chức vụ</a>
+                                        <li class="nav-item">   
+                                            <a class="nav-link" href="{{url('chucvu')}}">Danh sách chức vụ</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">Danh sách nhân viên</a>
                                             <div id="submenu-1-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="nhanvien">Tất cả nhân viên</a>
+                                                        <a class="nav-link" href="{{url('nhanvien')}}">Tất cả nhân viên</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product.html">Nhân viên chính thức</a>
+                                                        <a class="nav-link" href="{{url('nhanvien/1')}}">Nhân viên thử việc</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-single.html">Nhân viên thử việc</a>
+                                                        <a class="nav-link" href="{{url('nhanvien/2')}}">Nhân viên chính thức</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-checkout.html">Nhân viên nghĩ việc</a>
+                                                        <a class="nav-link" href="{{url('nhanvien/3')}}">Nhân viên nghỉ việc</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -47,7 +47,7 @@
                                             <div id="submenu-1-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="dashboard-influencer.html">Nhân viên</a>
+                                                    <a class="nav-link" href="{{url('hosonhanvien/NSNV001')}}">Nhân viên</a>
                                                     </li>
                                                     <!-- <li class="nav-item">
                                                         <a class="nav-link" href="influencer-finder.html">Influencer Finder</a>

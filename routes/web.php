@@ -18,5 +18,7 @@ Route::get('/', function () {
 Route::get('phongban','DanhmucController@getDanhSachPB');
 Route::get('chucvu','DanhmucController@getDanhSachCV');
 Route::get('nhanvien','DanhmucController@getDanhSachNV');
+Route::get('nhanvien/{num}','DanhmucController@getDanhSachNVLoai');
 
+Route::get('hosonhanvien/{id}','DanhmucController@getHosoNhanVien');
 

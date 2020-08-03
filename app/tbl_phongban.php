@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class tbl_phongban extends Model
 {
-    protected $table= "tbl_phongban";
+    protected $table= 'tbl_phongban';
+    protected $primaryKey = 'id_phongban';
+    public $incrementing = false;
+    //public $timestamps = true;
+
     public function tbl_chucvu(){
         return $this->hasMany('App\tbl_chucvu','id_phongban','id_phongban');
     }

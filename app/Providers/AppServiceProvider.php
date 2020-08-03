@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\tbl_ykien;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +25,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->composer('layout/menu',function($view){
+            $ykien=tbl_ykien::all();
+            $view->with('ykien',$ykien);
+        });
     }
 }

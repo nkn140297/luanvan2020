@@ -37,6 +37,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     public function tbl_hosonhanvien(){
-    	return $this->belongsTo('App\tbl_hosonhanvien','id_nhanvien','id_user');
+    	return $this->belongsTo('App\tbl_hosonhanvien','id_nhanvien','id_nhanvien');
+    }
+    
+    public function tbl_chucvu(){
+        return $this->hasManyThrough('App\tbl_chucvu','App\tbl_hosonhanvien','id','id_nhanvien','id_chucvu');
+    }
+    public function tbl_lienhe(){
+        return $this->hasManyThrough('App\tbl_lienhe','App\tbl_hosonhanvien','id','id_nhanvien','id_lienhe');
     }
 }
